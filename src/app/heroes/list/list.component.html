@@ -1,0 +1,15 @@
+<h1> listado de Heroes</h1>
+
+<button (click)="deleteLastHero()" class="btn btn-outline-danger">
+Borrar último Heroe
+</button>
+
+<h5>El Heroe eliminado ha sido: <small  class="text-danger" >{{ deletehero }}</small></h5>
+
+<ul class="mt-2 list-group"  *ngFor="let names of heroNames">
+  <li class="list-group-item">{{ names }}</li>
+ <!--  <li class="list-group-item">Ironman</li>
+  <li class="list-group-item">Hulk</li>
+  <li class="list-group-item">Thor</li>
+  <li class="list-group-item">Loki</li> -->
+</ul>
