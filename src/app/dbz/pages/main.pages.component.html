@@ -1,0 +1,20 @@
+<h1>DBZ Main Page</h1>
+<hr>
+
+<div class="row">
+  <!-- CHARACTERS -->
+  <div class="col"  >
+    <dbz-list [characterList]="dbzService.character" (onDeleteId)="dbzService.deleteCharacterById($event)"></dbz-list>
+
+  </div>
+
+
+  <!-- FORMULARIO -->
+<div class="col">
+  <dbz-add-character (onNewCharacter)="dbzService.onNewCharacter($event)"></dbz-add-character> <!-- $event nombre especial para recibir el evento -->
+</div>
+
+
+</div>
+
+

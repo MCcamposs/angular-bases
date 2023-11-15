@@ -5,7 +5,6 @@ import { HeroComponent } from './hero/hero.component';
 /* para poder usar el ngIf */
 import { CommonModule } from '@angular/common';
 
-
 @NgModule({
   declarations:[
     ListComponent,
